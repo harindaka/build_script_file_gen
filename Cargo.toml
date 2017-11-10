@@ -1,6 +1,6 @@
 [package]
 name = "build_script_file_gen"
-version = "0.3.0"
+version = "0.4.0"
 
 description = "A Rust library which contains convenience methods to generate files with specified content via build scripts and include their content within source files."
 authors = ["harindaka <harindaka@gmail.com>"]
@@ -14,6 +14,6 @@ license = "MIT/Apache-2.0"
 
 [badges]
 # Maintenance: `actively-developed`, `passively-maintained`, `as-is`, `none`, `experimental`, `looking-for-maintainer`, `deprecated`
-maintenance = { status = "experimental" }
+maintenance = { status = "passively-maintained" }
 
 [dependencies]
