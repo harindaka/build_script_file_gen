@@ -16,7 +16,7 @@ macro_rules! include_file_str {
     ($file:expr) => {         
         //include_str!(concat!("", $file));
         //let out_dir = env::var("OUT_DIR")
-        include_str!(concat!(env!("OUT_DIR"), $file));         
+        include_str!(concat!(env!("OUT_DIR"), "/", $file));         
     }
 }
 
