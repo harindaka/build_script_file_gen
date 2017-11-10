@@ -20,6 +20,15 @@ macro_rules! include_file_str {
     }
 }
 
+#[macro_export]
+macro_rules! include_file {  
+    ($file:expr) => {         
+        //include_str!(concat!("", $file));
+        //let out_dir = env::var("OUT_DIR")
+        include!(concat!(env!("OUT_DIR"), "/", $file));         
+    }
+}
+
 #[cfg(test)]
 mod tests {
     #[test]
