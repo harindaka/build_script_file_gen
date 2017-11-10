@@ -1,7 +1,7 @@
-extern crate build_script_file_gen;
+//#[macro_use]
+//extern crate build_script_file_gen;
 
-use build_script_file_gen::gen_file;
-
-fn main(){
-    gen_file("hello.txt", "hello wold");
+fn main(){    
+    //let bbb = include_file_str!("main.rs");
+    //println!("{}", bbb);
 }

@@ -11,13 +11,14 @@ pub fn gen_file(file_name: &str, content: &str){
     write!(f, "{}", &content).unwrap();
 }
 
-// pub fn read_file(file_name: &str) -> &'static str {
-//     static LONG_STRING: &'static str = include_str!(concat!(env!("OUT_DIR"), "/hello_world.txt"));
-//     return LONG_STRING;
-// }
-
-
-
+#[macro_export]
+macro_rules! include_file_str {  
+    ($file:expr) => {         
+        //include_str!(concat!("", $file));
+        //let out_dir = env::var("OUT_DIR")
+        include_str!(concat!(env!("OUT_DIR"), $file));         
+    }
+}
 
 #[cfg(test)]
 mod tests {
