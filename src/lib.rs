@@ -3,7 +3,7 @@ use std::path::Path;
 use std::io::{Write, BufWriter};
 use std::fs::File;
 
-pub fn gen_file(file_name: &str, content: &str){
+pub fn gen_file_str(file_name: &str, content: &str){
     let out_dir = env::var("OUT_DIR").unwrap();
     let dest_path = Path::new(&out_dir).join(&file_name);
     let mut f = BufWriter::new(File::create(&dest_path).unwrap());
