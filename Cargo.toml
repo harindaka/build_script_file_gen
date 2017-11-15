@@ -1,12 +1,13 @@
 [package]
 name = "build_script_file_gen"
-version = "0.6.0"
+version = "0.6.1"
 
 description = "A Rust library which contains convenience methods to generate files with specified content via build scripts and include their content within source files."
 authors = ["harindaka <harindaka@gmail.com>"]
 homepage = "https://github.com/harindaka/build_script_file_gen"
 repository = "https://github.com/harindaka/build_script_file_gen"
 keywords = ["build", "script", "generate", "file", "include"]
+readme = "README.md"
 
 # crates.io/category_slugs
 categories = ["development-tools", "development-tools::build-utils"]
